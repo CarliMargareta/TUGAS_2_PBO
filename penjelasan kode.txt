@@ -1,0 +1,21 @@
+Kode tersebut merupakan contoh implementasi dari konsep pemrograman berorientasi objek (OOP) dalam bahasa pemrograman Python. Kode tersebut menciptakan tiga kelas yaitu `Mahasiswa`, `Jurusan`, dan `Universitas`.
+
+1. Kelas `Mahasiswa` memiliki atribut `nama`, `npm`, dan `jurusan`. Pada metode `__init__`, atribut tersebut diinisialisasi dengan nilai yang diberikan saat objek dibuat. Metode `tampilkan_info` digunakan untuk menampilkan informasi lengkap tentang seorang mahasiswa.
+
+2. Kelas `Jurusan` memiliki atribut `NamaJurusan` dan `DaftarMahasiswa`. Pada metode `__init__`, atribut tersebut diinisialisasi dengan nilai yang diberikan saat objek dibuat. Metode `tambah_mahasiswa` digunakan untuk menambahkan objek `Mahasiswa` ke dalam daftar mahasiswa pada jurusan tersebut. Metode `tampilkan_daftar_mahasiswa` digunakan untuk menampilkan daftar mahasiswa yang terdaftar dalam jurusan tersebut.
+
+3. Kelas `Universitas` memiliki atribut `NamaUniversitas` dan `DaftarJurusan`. Pada metode `__init__`, atribut tersebut diinisialisasi dengan nilai yang diberikan saat objek dibuat. Metode `tambah_jurusan` digunakan untuk menambahkan objek `Jurusan` ke dalam daftar jurusan pada universitas tersebut. Metode `tampilkan_daftar_jurusan` digunakan untuk menampilkan daftar jurusan yang ada di universitas tersebut.
+
+Setelah mendefinisikan ketiga kelas di atas, kode selanjutnya melakukan langkah-langkah berikut:
+
+1. Membuat objek `Universitas` dengan nama "Universitas XYZ" menggunakan `universitas_xyz = Universitas("Universitas XYZ")`.
+
+2. Membuat objek `Jurusan` dengan nama "Teknik Informatika" dan menambahkannya ke dalam `Universitas XYZ` menggunakan `jurusan_ti = Jurusan("Teknik Informatika")` dan `universitas_xyz.tambah_jurusan(jurusan_ti)`.
+
+3. Membuat objek `Mahasiswa` dengan nama "Kalian masing", NIM "Kalian masing", dan memasukkannya ke dalam `Jurusan Teknik Informatika` di `Universitas XYZ` menggunakan `mahasiswa1 = Mahasiswa("Carli Margareta", "G1A022074", jurusan_ti)` dan `jurusan_ti.tambah_mahasiswa(mahasiswa1)`.
+
+4. Menampilkan daftar jurusan yang ada di `Universitas XYZ` menggunakan `universitas_xyz.tampilkan_daftar_jurusan()`.
+
+5. Menampilkan daftar mahasiswa yang terdaftar dalam `Jurusan Teknik Informatika` di `Universitas XYZ` menggunakan `jurusan_ti.tampilkan_daftar_mahasiswa()`.
+
+Dengan demikian, kode tersebut menciptakan objek-objek mahasiswa, jurusan, dan universitas, serta mengelolanya dengan menggunakan metode-metode yang ada dalam masing-masing kelas untuk menampilkan informasi yang diinginkan.
